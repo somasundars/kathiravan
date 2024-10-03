@@ -1,0 +1,55 @@
+:root {
+    --primary: #7A59D6;
+    --background: #ffffff;
+}
+
+.kathir-nav {
+    min-height: 86px;
+    height: auto;
+    gap: 0px;
+    left: 120px;
+    right: 120px;
+    border-bottom: 1px solid rgb(0 0 0 / 10%);
+    margin: 0px;
+    background: var(--background);
+}
+
+@media (min-width: 992px) {
+    #navbarText {
+        width: 654px;
+        min-width: 654px;
+    }
+}
+
+.nav-link {
+    font-family: Outfit;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+
+}
+
+#navbarText {
+    height: 80px;
+    gap: 46px;
+    opacity: 0px;
+}
+
+.kathir-nav-item {
+    width: auto;
+    padding: 10px 0px 0px 0px;
+    gap: 10px;
+    opacity: 0px;
+    display: flex;
+    padding: 0;
+    height: 86px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.kathir-nav-item.active {
+    border-bottom: 4px solid var(--primary)
+}
