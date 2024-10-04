@@ -44,24 +44,33 @@ function consoleText(words, id) {
   }, 200);
 }
 
-$(document).ready(function () {
-  $(".nav-link").on("click", function (event) {
-    // Prevent default action for anchor click
-    event.preventDefault();
 
-    // Get the target element's ID from the href attribute (e.g., "#section1")
-    const targetId = $(this).attr("href");
-    const targetElement = $(targetId);
+$(document).ready(function() {
+    // Function to handle setting active class
+    function setActiveNavItem(targetId) {
+        // Remove 'active' class from all kathir-nav-item elements
+        $(".kathir-nav-item").removeClass('active');
 
-    // If the target element exists, scroll to its position
-    if (targetElement.length) {
-      $("html, body").animate(
-        {
-          scrollTop: targetElement.offset().top - 100,
-        },
-        400,
-        "swing"
-      );
+        // Find the nav-link with the matching href and set its parent kathir-nav-item to active
+        $(`.nav-link[href='${targetId}']`).closest('.kathir-nav-item').addClass('active');
     }
-  });
+
+    // Event handler for clicking on nav-link
+    $(".nav-link").on('click', function(event) {
+        event.preventDefault();  // Prevent default anchor behavior
+        
+        const targetId = $(this).attr('href');
+
+        // Call function to update active state
+        setActiveNavItem(targetId);
+
+        // Smooth scroll to the target section
+        const targetElement = $(targetId);
+        if (targetElement.length) {
+            $('html, body').animate({
+                scrollTop: targetElement.offset().top - 100
+            }, 200, 'swing');
+        }
+    });
+
 });
