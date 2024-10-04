@@ -2,69 +2,94 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kathir Portfolio</title>
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/jquery-3.7.1.min.js"></script>
-    <script src="/assets/js/main.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kathir Portfolio</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/jquery-3.7.1.min.js"></script>
+  <script src="/assets/js/main.js"></script>
 </head>
 
 <body>
-    <!-- Just an image -->
-    <nav class="navbar navbar-light navbar-expand-lg kathir-nav fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="/assets/images/brand.png" height="42" alt="Kathir">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="kathir-nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="kathir-nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="kathir-nav-item">
-                    <a class="nav-link" href="#">Works</a>
-                </li>
-                <li class="kathir-nav-item">
-                    <a class="nav-link" href="#">Testimonial</a>
-                </li>
-                <li class="kathir-nav-item">
-                    <a class="nav-link" href="#">Contact me</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container hero" id="Home">
-        <div class="row">
-            <div class="col col-md-6">
-                <div class="info">
-                    <h1 class="text-1 hero-color-1">Hello,</h1>
-                    <h1 class="text-1 hero-name-color">I'm Kathiravan</h1>
-                    <div class="animation">
-                        <div class='console-container'><span id='herotext'></span>
-                            <div class='console-underscore' id='console'>&#95;</div>
-                        </div>
-                    </div>
-                    <div class="hero-action-btn">
-                        <button type="button" class="btn btn-hero">Contact</button>
-                        <a type="button" class="btn btn-outline-hero" download
-                            href="/assets/files/Kathiravan_UXD.pdf">Download Resume</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-md-6 d-none d-lg-block">
-                <img src="/assets/images/profile.png" alt="Profile" class="kathir-profile" />
-            </div>
-        </div>
+  <!-- Just an image -->
+  <nav class="navbar navbar-light navbar-expand-lg kathir-nav fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/images/brand.png" height="42" alt="Kathir" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="kathir-nav-item active">
+          <a class="nav-link" href="#Home">Home</a>
+        </li>
+        <li class="kathir-nav-item">
+          <a class="nav-link" href="#About">About</a>
+        </li>
+        <li class="kathir-nav-item">
+          <a class="nav-link" href="#Works">Works</a>
+        </li>
+        <li class="kathir-nav-item">
+          <a class="nav-link" href="#Testimonial">Testimonial</a>
+        </li>
+        <li class="kathir-nav-item">
+          <a class="nav-link" href="#contact">Contact me</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+  <div class="container hero header" id="Home">
+    <div class="row">
+      <div class="col col-md-6">
+        <div class="info">
+          <h1 class="text-1 hero-color-1">Hello,</h1>
+          <h1 class="text-1 hero-name-color">I'm Kathiravan</h1>
+          <div class="animation">
+            <div class="console-container">
+              <span id="herotext"></span>
+              <div class="console-underscore" id="console">&#95;</div>
+            </div>
+          </div>
+          <div class="hero-action-btn">
+            <a type="button" class="btn btn-hero nav-link" href="#contact">
+              Contact
+            </a>
+            <a type="button" class="btn btn-outline-hero" download href="/assets/files/Kathiravan_UXD.pdf">Download
+              Resume</a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-6 d-none d-lg-block">
+        <img src="/assets/images/profile.png" alt="Profile" class="kathir-profile" />
+      </div>
+    </div>
+    <div class="widget">
+      <div class="widget-item">
+        <a class="nav-link" href="#About" style="padding: 0px;">
+          <img src="/assets/images/downarrow.png" width="46px" height="66px" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container hero about" id="About">
+    <h1>Work in Progress</h1>
+  </div>
+  <div class="container hero Works" id="Works">
+    <h1>Work in Progress</h1>
+  </div>
+  <div class="container hero Testimonial" id="Testimonial">
+    <h1>Work in Progress</h1>
+  </div>
+  <div class="container hero contact" id="contact">
+    <h1>Work in Progress</h1>
+  </div>
+  <div class="container hero footer" id="footer">
+    <h1>Work in Progress</h1>
+  </div>
 </body>
 
 </html>

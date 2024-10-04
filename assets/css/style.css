@@ -33,9 +33,12 @@
     }
 
     .kathir-nav {
-        padding-left: 100px;
-        padding-right: 100px;
+        padding: 0px 100px;
     }
+}
+
+.hero {
+    min-height: 50vh;
 }
 
 /* @media (max-width: 992px) {
@@ -170,3 +173,71 @@
 }
 
 /* hero text animation */
+
+/* header widget */
+
+.header .widget {
+    position: relative;
+    max-width: max-content;
+    width: 95%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    border: 1px solid #dee2e6;
+    padding: 0;
+    margin-top: -25px;
+    z-index: 999;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(173, 181, 189, 0.4);
+}
+
+.header .widget .widget-item {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    text-align: center;
+    border-right: 1px solid #dee2e6;
+}
+
+.header .widget .widget-item:last-child {
+    border-right: 0;
+}
+
+.header .widget .widget-item h2,
+.header .widget .widget-item p {
+    margin: 0;
+}
+
+.header .widget .widget-item p {
+    opacity: .7;
+    font-size: 14px;
+}
+
+@media (max-width: 767.98px) {
+    .header .widget {
+        padding: 10px;
+        margin-top: -32px;
+    }
+
+    .header .widget .widget-item h2 {
+        font-size: 20px;
+    }
+
+    .header .widget .widget-item p {
+        font-size: 13px;
+    }
+}
+
+/* header widget */
+
+html {
+    scroll-behavior: smooth;
+  }
+  

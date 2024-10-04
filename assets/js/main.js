@@ -43,3 +43,25 @@ function consoleText(words, id) {
     }
   }, 200);
 }
+
+$(document).ready(function () {
+  $(".nav-link").on("click", function (event) {
+    // Prevent default action for anchor click
+    event.preventDefault();
+
+    // Get the target element's ID from the href attribute (e.g., "#section1")
+    const targetId = $(this).attr("href");
+    const targetElement = $(targetId);
+
+    // If the target element exists, scroll to its position
+    if (targetElement.length) {
+      $("html, body").animate(
+        {
+          scrollTop: targetElement.offset().top - 100,
+        },
+        400,
+        "swing"
+      );
+    }
+  });
+});
